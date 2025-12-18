@@ -1,13 +1,14 @@
 import time
 
-print("Hello! I am Bob, the Breakfast Bot.")
-time.sleep(1)
-print("Today we have two breakfast options available.")
-time.sleep(1)
-print("The first is waffles with strawberries and whipped cream.") 
-time.sleep(1)
-print("The second is pancakes with butter and syrup.")
-time.sleep(1)
+def print_pause(message_to_print):
+    print(message_to_print)
+    time.sleep(1)
+
+print_pause("Hello! I am Bob, the Breakfast Bot.")
+print_pause("Today we have two breakfast options available.")
+print_pause("The first is waffles with strawberries and whipped cream.") 
+print_pause("The second is pancakes with butter and syrup.")
+
 while True:
     while True:
         response = input("Please place your order. Would you like waffles or pancakes?\n").lower()
